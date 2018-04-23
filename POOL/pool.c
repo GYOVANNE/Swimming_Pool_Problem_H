@@ -29,9 +29,9 @@
 	{
 		float MED =	FLOOR_DIMENSION(x,y,z,0.15);
 		float BIG =	FLOOR_DIMENSION(x,y,z,0.3);
-		float LIT_TILE =	CALC(MED,SIZE,0.0225,0.0025);//pequeno x3
-		float MED_TILE =	CALC(BIG,MED*0.0225,0.09,0.0225);//medio g3
-		float BIG_TILE =	CALC(BIG,SIZE,0.09,0.0025);//grande b3
+		float LIT_TILE =	CALC(MED,SIZE,0.0225,0.0025);
+		float MED_TILE =	CALC(BIG,MED*0.0225,0.09,0.0225);
+		float BIG_TILE =	CALC(BIG,SIZE,0.09,0.0025);
 		if((BIG<=d3)&&(MED_TILE<=d2)&&(LIT_TILE<=d1)){
 		printf("\n %.0f \t %.0f \t%.0f \t \n",LIT_TILE,MED_TILE,BIG);
 		}else if((BIG<=d3)&&(BIG_TILE<=d1)){
